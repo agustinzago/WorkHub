@@ -793,7 +793,7 @@ export interface ApiArticleArticle extends Schema.CollectionType {
   info: {
     singularName: 'article';
     pluralName: 'articles';
-    displayName: 'Article';
+    displayName: 'Blog';
     description: 'Create your blog content';
   };
   options: {

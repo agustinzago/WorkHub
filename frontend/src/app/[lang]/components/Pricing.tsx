@@ -27,7 +27,7 @@ interface PriceProps {
 
 export default function Pricing({ data }: PriceProps) {
   return (
-    <section className="py-20 dark:bg-black dark:text-gray-100 m:py-12 lg:py-24">
+    <section className="py-20 bg-white dark-text-black-100 m:py-12 lg:py-24">
       <div className="container px-4 mx-auto ">
         <div className="max-w-2xl mx-auto mb-16 text-center">
           <span className="font-bold tracking-wider uppercase dark:text-violet-400">
@@ -53,7 +53,7 @@ export default function Pricing({ data }: PriceProps) {
                     <span
                       className={`ml-1 text-sm tracking-wid ${
                         plan.isRecommended
-                          ? "dark:text-gray-900"
+                          ? "dark-text-black-900"
                           : "dark:text-violet-500"
                       }`}
                     >
@@ -64,8 +64,8 @@ export default function Pricing({ data }: PriceProps) {
                 <p
                   className={`mt-3 leading-relaxed text-lg font-bold ${
                     plan.isRecommended
-                      ? "dark:text-gray-900"
-                      : "dark:text-gray-400"
+                      ? "dark-text-black-900"
+                      : "dark-text-black-400"
                   }`}
                 >
                   {plan.description}
@@ -73,8 +73,8 @@ export default function Pricing({ data }: PriceProps) {
                 <ul
                   className={`flex-1 mb-6 ${
                     plan.isRecommended
-                      ? "dark:text-gray-900 font-semibold"
-                      : "dark:text-gray-400"
+                      ? "dark-text-black-900 font-semibold"
+                      : "dark-text-black-400"
                   }`}
                 >
                   {plan.product_features.data.map((feature: Feature) => (
@@ -85,8 +85,8 @@ export default function Pricing({ data }: PriceProps) {
                         fill="currentColor"
                         className={`flex-shrink-0 w-6 h-6 ${
                           plan.isRecommended
-                            ? "dark:text-gray-900"
-                            : "dark:text-gray-400"
+                            ? "dark-text-black-900"
+                            : "dark-text-black-400"
                         }`}
                       >
                         <path
@@ -104,7 +104,7 @@ export default function Pricing({ data }: PriceProps) {
                   className={`inline-block px-5 py-3 font-semibold tracking-wider text-center rounded   ${
                     plan.isRecommended
                       ? "dark:bg-gray-900 dark:text-violet-400"
-                      : "dark:bg-violet-400 dark:text-gray-900"
+                      : "dark:bg-violet-400 dark-text-black-900"
                   }`}
                 >
                   Get Started
