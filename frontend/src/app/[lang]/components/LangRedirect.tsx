@@ -5,7 +5,7 @@ import HighlightedText from "./HighlightedText";
 
 export default function LangRedirect() {
   return (
-    <section className="bg-white dark-text-black-100">
+    <section className="bg-gray-50 dark-text-black-100">
       <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
         <div className="flex flex-col justify-center p-6 text-center rounded-lg lg:max-w-md xl:max-w-lg lg:text-left">
           <HighlightedText

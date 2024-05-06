@@ -47,7 +47,7 @@ export default function Hero({ data }: HeroProps) {
   const imgUrl = getStrapiMedia(data.picture.data.attributes.url);
 
   return (
-    <section className="bg-white dark-text-black-100">
+    <section className="bg-gray-50 dark-text-black-100">
       <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
         <div className="flex flex-col justify-center p-6 text-center rounded-lg lg:max-w-md xl:max-w-lg lg:text-left">
           <HighlightedText
@@ -67,7 +67,7 @@ export default function Hero({ data }: HeroProps) {
             {data.buttons.map((button: Button, index: number) => (
               <Link
                 key={index}
-                href={button.url}
+                href='Hello'
                 target={button.newTab ? "_blank" : "_self"}
                 className={renderButtonStyle(button.type)}
               >
