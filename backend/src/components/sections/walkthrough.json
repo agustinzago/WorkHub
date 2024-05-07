@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_sections_walkthroughs",
+  "collectionName": "components_sections_walkthroghs",
   "info": {
     "displayName": "Walkthrough",
     "icon": "bulletList",
@@ -13,11 +13,11 @@
     "description": {
       "type": "text"
     },
-    "step": {
-      "displayName": "Step",
+    "steps": {
+      "displayName": "Steps",
       "type": "component",
       "repeatable": true,
-      "component": "elements.step"
+      "component": "elements.steps"
     }
   }
 }

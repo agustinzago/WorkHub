@@ -113,21 +113,15 @@ export interface ElementsPlan extends Schema.Component {
   };
 }
 
-export interface ElementsStep extends Schema.Component {
+export interface ElementsSteps extends Schema.Component {
   collectionName: 'components_elements_steps';
   info: {
-    displayName: 'Step';
+    displayName: 'Steps';
     icon: 'check';
-    description: '';
   };
   attributes: {
     title: Attribute.String;
     description: Attribute.Text;
-    media: Attribute.Media;
-    showLink: Attribute.Boolean & Attribute.DefaultTo<false>;
-    newTab: Attribute.Boolean & Attribute.DefaultTo<false>;
-    url: Attribute.String;
-    text: Attribute.Text;
   };
 }
 
@@ -417,7 +411,7 @@ export interface SectionsTestimonialsGroup extends Schema.Component {
 }
 
 export interface SectionsWalkthrough extends Schema.Component {
-  collectionName: 'components_sections_walkthroughs';
+  collectionName: 'components_sections_walkthroghs';
   info: {
     displayName: 'Walkthrough';
     icon: 'bulletList';
@@ -426,7 +420,7 @@ export interface SectionsWalkthrough extends Schema.Component {
   attributes: {
     title: Attribute.String;
     description: Attribute.Text;
-    step: Attribute.Component<'elements.step', true>;
+    steps: Attribute.Component<'elements.steps', true>;
   };
 }
 
@@ -516,7 +510,7 @@ declare module '@strapi/types' {
       'elements.logos': ElementsLogos;
       'elements.notification-banner': ElementsNotificationBanner;
       'elements.plan': ElementsPlan;
-      'elements.step': ElementsStep;
+      'elements.steps': ElementsSteps;
       'elements.testimonial': ElementsTestimonial;
       'layout.footer': LayoutFooter;
       'layout.logo': LayoutLogo;

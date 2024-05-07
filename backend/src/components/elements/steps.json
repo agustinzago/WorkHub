@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_elements_steps",
+  "info": {
+    "displayName": "Steps",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
