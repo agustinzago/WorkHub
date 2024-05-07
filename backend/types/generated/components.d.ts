@@ -534,7 +534,7 @@ declare module '@strapi/types' {
       'sections.pricing': SectionsPricing;
       'sections.rich-text': SectionsRichText;
       'sections.testimonials-group': SectionsTestimonialsGroup;
-      'sections.walkthrough': SectionsWalkthrough;
+      'sections.walkthroughs': SectionsWalkthrough;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
