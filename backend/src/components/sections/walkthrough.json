@@ -13,7 +13,7 @@
     "description": {
       "type": "text"
     },
-    "Step": {
+    "step": {
       "displayName": "Step",
       "type": "component",
       "repeatable": true,

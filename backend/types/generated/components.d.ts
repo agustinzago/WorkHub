@@ -146,22 +146,6 @@ export interface ElementsTestimonial extends Schema.Component {
   };
 }
 
-export interface ElementsWalkthrough extends Schema.Component {
-  collectionName: 'components_elements_walkthroughs';
-  info: {
-    displayName: 'Walkthrough';
-  };
-  attributes: {
-    title: Attribute.String;
-    description: Attribute.Text;
-    media: Attribute.Media;
-    showLink: Attribute.Boolean & Attribute.DefaultTo<false>;
-    newTab: Attribute.Boolean & Attribute.DefaultTo<false>;
-    url: Attribute.String;
-    text: Attribute.String;
-  };
-}
-
 export interface LayoutFooter extends Schema.Component {
   collectionName: 'components_layout_footers';
   info: {
@@ -442,7 +426,7 @@ export interface SectionsWalkthrough extends Schema.Component {
   attributes: {
     title: Attribute.String;
     description: Attribute.Text;
-    Step: Attribute.Component<'elements.step', true>;
+    step: Attribute.Component<'elements.step', true>;
   };
 }
 
@@ -534,7 +518,6 @@ declare module '@strapi/types' {
       'elements.plan': ElementsPlan;
       'elements.step': ElementsStep;
       'elements.testimonial': ElementsTestimonial;
-      'elements.walkthrough': ElementsWalkthrough;
       'layout.footer': LayoutFooter;
       'layout.logo': LayoutLogo;
       'layout.navbar': LayoutNavbar;
