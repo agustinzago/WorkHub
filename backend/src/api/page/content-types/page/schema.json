@@ -39,7 +39,7 @@
         "sections.lead-form",
         "sections.features",
         "sections.heading",
-        "sections.walkthroughs"
+        "sections.walkthrough"
       ],
       "pluginOptions": {
         "i18n": {

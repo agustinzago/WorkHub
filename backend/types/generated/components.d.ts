@@ -113,6 +113,24 @@ export interface ElementsPlan extends Schema.Component {
   };
 }
 
+export interface ElementsStep extends Schema.Component {
+  collectionName: 'components_elements_steps';
+  info: {
+    displayName: 'Step';
+    icon: 'check';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+    media: Attribute.Media;
+    showLink: Attribute.Boolean & Attribute.DefaultTo<false>;
+    newTab: Attribute.Boolean & Attribute.DefaultTo<false>;
+    url: Attribute.String;
+    text: Attribute.Text;
+  };
+}
+
 export interface ElementsTestimonial extends Schema.Component {
   collectionName: 'components_slices_testimonials';
   info: {
@@ -414,16 +432,17 @@ export interface SectionsTestimonialsGroup extends Schema.Component {
   };
 }
 
-export interface SectionsWalkthroughs extends Schema.Component {
-  collectionName: 'components_layout_walkthroughs';
+export interface SectionsWalkthrough extends Schema.Component {
+  collectionName: 'components_sections_walkthroughs';
   info: {
-    displayName: 'Walkthroughs';
+    displayName: 'Walkthrough';
+    icon: 'bulletList';
     description: '';
   };
   attributes: {
-    heading: Attribute.String;
+    title: Attribute.String;
     description: Attribute.Text;
-    walkthrough: Attribute.Component<'elements.walkthrough', true>;
+    Step: Attribute.Component<'elements.step', true>;
   };
 }
 
@@ -513,6 +532,7 @@ declare module '@strapi/types' {
       'elements.logos': ElementsLogos;
       'elements.notification-banner': ElementsNotificationBanner;
       'elements.plan': ElementsPlan;
+      'elements.step': ElementsStep;
       'elements.testimonial': ElementsTestimonial;
       'elements.walkthrough': ElementsWalkthrough;
       'layout.footer': LayoutFooter;
@@ -534,7 +554,7 @@ declare module '@strapi/types' {
       'sections.pricing': SectionsPricing;
       'sections.rich-text': SectionsRichText;
       'sections.testimonials-group': SectionsTestimonialsGroup;
-      'sections.walkthroughs': SectionsWalkthroughs;
+      'sections.walkthrough': SectionsWalkthrough;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

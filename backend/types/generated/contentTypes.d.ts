@@ -1066,7 +1066,7 @@ export interface ApiPagePage extends Schema.CollectionType {
         'sections.lead-form',
         'sections.features',
         'sections.heading',
-        'sections.walkthroughs'
+        'sections.walkthrough'
       ]
     > &
       Attribute.SetPluginOptions<{
