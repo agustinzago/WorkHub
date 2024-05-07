@@ -129,7 +129,7 @@ export interface ElementsTestimonial extends Schema.Component {
 }
 
 export interface ElementsWalkthrough extends Schema.Component {
-  collectionName: 'components_elements_walkthrough';
+  collectionName: 'components_elements_walkthroughs';
   info: {
     displayName: 'Walkthrough';
   };
