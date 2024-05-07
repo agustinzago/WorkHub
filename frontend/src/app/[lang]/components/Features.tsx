@@ -33,7 +33,7 @@ function Feature({ title, description, showLink, newTab, url, text }: Feature) {
           clipRule="evenodd"
         ></path>
       </svg>
-      <h3 className="my-3 text-3xl font-semibold">{title}</h3>
+      <h3 className="inline-block my-3 text-3xl font-semibold">{title}</h3>
       <div className="space-y-1 leading-tight my-6">
         <p>{description}</p>
       </div>

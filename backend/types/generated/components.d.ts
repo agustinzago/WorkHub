@@ -128,6 +128,22 @@ export interface ElementsTestimonial extends Schema.Component {
   };
 }
 
+export interface ElementsWalkthrough extends Schema.Component {
+  collectionName: 'components_elements_walkthrough';
+  info: {
+    displayName: 'Walkthrough';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+    media: Attribute.Media;
+    showLink: Attribute.Boolean & Attribute.DefaultTo<false>;
+    newTab: Attribute.Boolean & Attribute.DefaultTo<false>;
+    url: Attribute.String;
+    text: Attribute.String;
+  };
+}
+
 export interface LayoutFooter extends Schema.Component {
   collectionName: 'components_layout_footers';
   info: {
@@ -398,6 +414,19 @@ export interface SectionsTestimonialsGroup extends Schema.Component {
   };
 }
 
+export interface SectionsWalkthrough extends Schema.Component {
+  collectionName: 'components_layout_walkthroughs';
+  info: {
+    displayName: 'Walkthroughs';
+    description: '';
+  };
+  attributes: {
+    heading: Attribute.String;
+    description: Attribute.Text;
+    walkthrough: Attribute.Component<'elements.feature', true>;
+  };
+}
+
 export interface SharedMedia extends Schema.Component {
   collectionName: 'components_shared_media';
   info: {
@@ -485,6 +514,7 @@ declare module '@strapi/types' {
       'elements.notification-banner': ElementsNotificationBanner;
       'elements.plan': ElementsPlan;
       'elements.testimonial': ElementsTestimonial;
+      'elements.walkthrough': ElementsWalkthrough;
       'layout.footer': LayoutFooter;
       'layout.logo': LayoutLogo;
       'layout.navbar': LayoutNavbar;
@@ -504,6 +534,7 @@ declare module '@strapi/types' {
       'sections.pricing': SectionsPricing;
       'sections.rich-text': SectionsRichText;
       'sections.testimonials-group': SectionsTestimonialsGroup;
+      'sections.walkthrough': SectionsWalkthrough;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

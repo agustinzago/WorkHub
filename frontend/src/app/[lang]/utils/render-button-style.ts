@@ -1,9 +1,9 @@
 export function renderButtonStyle(type: string) {
 	switch (type) {
 		case "primary":
-			return "bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white py-8 px-3 border border-red-500 hover:border-transparent rounded";
+			return "px-6 py-5 text-lg font-semibold rounded dark:bg-red-400 text-white text-center hover:bg-red-600";
 		case "secondary":
-			return "bg-transparent hover:bg-red-500 text-black-700 font-semibold hover:text-white py-8 px-3 border border-red-500 hover:border-transparent rounded";
+			return "px-6 py-5 text-lg font-semibold rounded dark:bg-red-200 text-white text-center hover:bg-red-400";
 		default:
 			return "px-8 py-3 text-lg font-semibold rounded dark:bg-violet-400 dark-text-black-900";
 	}

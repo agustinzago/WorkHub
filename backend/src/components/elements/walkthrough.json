@@ -1,0 +1,40 @@
+{
+    "collectionName": "components_elements_walkthrough",
+    "info": {
+      "displayName": "Walkthrough"
+    },
+    "options": {},
+    "attributes": {
+      "title": {
+        "type": "string"
+      },
+      "description": {
+        "type": "text"
+      },
+      "media": {
+        "allowedTypes": [
+          "images",
+          "files",
+          "videos",
+          "audios"
+        ],
+        "type": "media",
+        "multiple": false
+      },
+      "showLink": {
+        "type": "boolean",
+        "default": false
+      },
+      "newTab": {
+        "type": "boolean",
+        "default": false
+      },
+      "url": {
+        "type": "string"
+      },
+      "text": {
+        "type": "string"
+      }
+    }
+  }
+  
