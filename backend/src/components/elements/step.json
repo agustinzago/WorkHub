@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_elements_steps",
+  "info": {
+    "displayName": "Step",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "showLink": {
+      "type": "boolean"
+    },
+    "newTab": {
+      "type": "boolean"
+    },
+    "url": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

@@ -34,6 +34,14 @@ const populate = {
       submitButton: {
         populate: true,
       },
+      step: {
+        populate: {
+          fields: ["title", "description", "showLink", "newTab", "url", "text"],
+          media: {
+            fields: ["url", "alternativeText", "caption", "width", "height"],
+          },
+        },
+      }
     },
   },
   seo: {

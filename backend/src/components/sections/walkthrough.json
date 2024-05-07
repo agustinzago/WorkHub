@@ -1,23 +1,23 @@
 {
-  "collectionName": "components_sections_walkthroghs",
+  "collectionName": "components_sections_walkthroughs",
   "info": {
     "displayName": "Walkthrough",
-    "icon": "bulletList",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "title": {
+    "heading": {
       "type": "string"
     },
     "description": {
       "type": "text"
     },
-    "steps": {
-      "displayName": "Steps",
+    "step": {
+      "displayName": "Step",
       "type": "component",
       "repeatable": true,
-      "component": "elements.steps"
+      "component": "elements.step",
+      "required": false
     }
   }
 }
