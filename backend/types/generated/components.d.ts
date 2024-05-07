@@ -414,7 +414,7 @@ export interface SectionsTestimonialsGroup extends Schema.Component {
   };
 }
 
-export interface SectionsWalkthrough extends Schema.Component {
+export interface SectionsWalkthroughs extends Schema.Component {
   collectionName: 'components_layout_walkthroughs';
   info: {
     displayName: 'Walkthroughs';
@@ -423,7 +423,7 @@ export interface SectionsWalkthrough extends Schema.Component {
   attributes: {
     heading: Attribute.String;
     description: Attribute.Text;
-    walkthrough: Attribute.Component<'elements.feature', true>;
+    walkthrough: Attribute.Component<'elements.walkthrough', true>;
   };
 }
 
@@ -534,7 +534,7 @@ declare module '@strapi/types' {
       'sections.pricing': SectionsPricing;
       'sections.rich-text': SectionsRichText;
       'sections.testimonials-group': SectionsTestimonialsGroup;
-      'sections.walkthroughs': SectionsWalkthrough;
+      'sections.walkthroughs': SectionsWalkthroughs;
       'shared.media': SharedMedia;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;

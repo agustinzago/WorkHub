@@ -16,7 +16,7 @@
         "displayName": "Walkthrough",
         "type": "component",
         "repeatable": true,
-        "component": "elements.feature"
+        "component": "element.walkthrough"
       }
     }
   }
