@@ -39,11 +39,12 @@ export default function Pricing({ data }: PriceProps) {
           {data.plans.map((plan: Plan) => (
             <div
               key={plan.id}
-              className="w-full p-4 mb-8  sm:mx-40 lg:mx-0 lg:w-1/3 lg:mb-0"
+              className="w-full p-4 mb-8 sm:mx-40 lg:mx-auto lg:w-1/3 lg:mb-0"
             >
+
               <div
                 className={`flex flex-col p-6 space-y-6 rounded shadow sm:p-8 min-h-[475px] min-w-[300px] ${
-                  plan.isRecommended ? "dark:bg-red-600" : "dark:bg-gray-800"
+                  plan.isRecommended ? "dark:bg-red-500" : "bg-white-800"
                 }`}
               >
                 <div className="space-y-2">

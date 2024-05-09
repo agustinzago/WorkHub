@@ -127,6 +127,7 @@ export interface ElementsStep extends Schema.Component {
     url: Attribute.String;
     text: Attribute.String;
     media: Attribute.Media;
+    number: Attribute.String;
   };
 }
 

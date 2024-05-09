@@ -6,7 +6,6 @@ import Email from "../components/Email";
 import Walkthrough from '../components/Walkthrough';
 
 export function sectionRenderer(section: any, index: number) {
-  console.log({section: JSON.stringify(section)})
   switch (section.__component) {
     case "sections.hero":
       return <Hero key={index} data={section} />;
