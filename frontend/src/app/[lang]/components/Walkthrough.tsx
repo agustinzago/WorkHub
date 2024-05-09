@@ -12,14 +12,22 @@ interface Step {
   id: string;
   title: string;
   description: string;
+  media: string;
+  showLink: boolean;
+  newTab: boolean;
+  url: string;
+  text: string;
 }
 
-function Step({ title, description }: Step) {
+function StepComponent({ title, description }: Step) {
     return (
-        <div>
-          <p>{title}</p>
-          <p>{description}</p>
+      <div className="w-full flex items-center justify-center">
+        <div className="max-w-sm mx-auto">
+          {/* <img src={media} alt={title} className="w-full" /> */}
+          <h3 className="text-lg font-semibold mt-4">{title}</h3>
+          <p className="mt-2">{description}</p>
         </div>
+    </div>
     );
 }
 
@@ -34,7 +42,7 @@ export default function Walkthrough({ data }: WalkthroughProps) {
       </div>
       <div className="container mx-auto my-6 grid justify-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {data.step.map((step: Step, index: number) => (
-          <Step key={index} {...step} />
+          <StepComponent key={index} {...step} />
         ))}
       </div>
     </section>
