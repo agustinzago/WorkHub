@@ -22,11 +22,11 @@ interface Step {
 
 function StepComponent({ number, title, description, showLink, newTab, url, text }: Step) {
   return (
-    <div className="flex items-center gap-4 p-10 rounded-lg shadow-lg bg-gray-100 mr-4">
+    <div className="flex items-center gap-4 p-10 rounded-lg shadow-lg bg-gray-100 mr-0">
       <div className="flex-shrink-0 w-16 h-16 bg-red-400 rounded-full flex items-center justify-center">
         <span className="text-2xl font-semibold text-gray-700">{number}</span>
       </div>
-      <div className="flex flex-col justify-center flex-grow"> {/* Cambiado a flex-grow */}
+      <div className="flex flex-col justify-center flex-grow">
         <h3 className="text-lg font-semibold text-gray-800 text-center mb-2">{title}</h3>
         <p className="text-gray-600 text-center mb-4">{description}</p>
         {showLink && (

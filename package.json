@@ -12,7 +12,10 @@
     "repo:upstream": "git fetch upstream && git merge upstream/main"
   },
   "dependencies": {
+    "@supabase/ssr": "^0.3.0",
+    "@supabase/supabase-js": "^2.43.1",
     "concurrently": "^8.2.2",
+    "next": "^14.2.3",
     "npm-check-updates": "^16.14.15"
   }
 }
