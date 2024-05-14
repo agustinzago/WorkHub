@@ -1,5 +1,6 @@
 import { fetchAPI } from '@/app/[lang]/utils/fetch-api';
 import Post from '@/app/[lang]/views/post';
+import { url } from 'inspector';
 import type { Metadata } from 'next';
 
 async function getPostBySlug(slug: string) {
@@ -78,6 +79,6 @@ export async function generateStaticParams() {
                     slug: string;
                 };
             };
-        }) => ({ slug: article.attributes.slug, category: article.attributes.slug })
+        }) => ({ slug: article.attributes.slug, category: article.attributes.category.slug })
     );
 }
